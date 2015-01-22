@@ -1,0 +1,21 @@
+ls
+ssh ejw45@netlab-6.thot.cs.pitt.edu
+ls
+clear
+lls
+lls
+ls
+clear
+ls
+ls
+cd ..
+ls
+ls
+cd ..
+ls
+cd CS334/
+ls
+go run wake.go 
+go run wake.go 
+go run wake.go
+ls

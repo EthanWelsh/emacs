@@ -1,0 +1,26 @@
+;;;$Id: sawfishrc 7081 2011-06-30 20:55:24Z tv.raman.tv $
+(setq load-path
+      (cons
+      (expand-file-name  "~/emacs/lisp/emacspeak/sawfish")
+      load-path))
+(load "tts")
+(load "tools")
+(bind-keys global-keymap
+           "M-e" 'emacs
+"M-L" 'launch
+           "M-t" 'tts-say-current-window
+"M-F4" 'delete-this-window-safeley
+"M-F5" 'lock
+"M-F10" 'launch
+"M-F12" 'quit
+)
+
+(require 'audio-events)
+(setq audio-events-enabled t)
+(setq play-sample-program "/usr/bin/aplay")
+(emacs)
+(tts-open)
+(tts-say-window-on-focus t)
+(tts-say-workspace-on-change t)
+
+(tts-say "Loaded SawfishRC")
