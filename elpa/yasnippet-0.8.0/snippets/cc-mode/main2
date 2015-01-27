@@ -1,7 +1,0 @@
-# name: int main(){}
-# key: mainn
-# --
-int main(){
-    $0
-    return 0;
-}

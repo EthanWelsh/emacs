@@ -1,4 +1,22 @@
-((("key-chord-define-global" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+((("kbd" .
+   [1 0 0])
+  ("ac-config-default" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("auto-complete-config" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("require" .
+   [0 0 0 1 0 0 0])
+  ("key-chord-define-global" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 2 0 0 0 0])
   ("key-chord-define" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])))
+   [0 0 0 0 0 0 0 1 0 0 0 2 0 0 0 0])
+  ("m" .
+   [1])
+  ("key-chord" .
+   [0 0 0 1 1 0 0 0 0])
+  ("next" .
+   [1 0 0 0])
+  ("spotify-next" .
+   [0 0 0 0 1 0 0 0 0 0 0 0])
+  ("spotify-previous" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])))

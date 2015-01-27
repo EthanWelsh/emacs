@@ -36,6 +36,8 @@
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
+
+
 (global-set-key (kbd "C-'") 'ace-jump-char-mode)
 (global-set-key (kbd "C-M-m") 'ace-jump-word-mode)
 (global-set-key (kbd "C-.") 'mc/mark-next-like-this)
@@ -63,6 +65,9 @@
 (key-chord-define-global "qr" 'list-bookmarks)
 (key-chord-define-global "bn" 'compile)
 (key-chord-define-global "fj" 'kill-whole-line)
+(key-chord-define-global ",." 'spotify-next)
+(key-chord-define-global "nm" 'spotify-previous)
+
 
 (pending-delete-mode t)
 (key-chord-mode 1)
@@ -120,10 +125,7 @@
 
 
 
-
 ;; Stuff that Ethan added
-
-
 (setq visible-bell t)
 (setq ring-bell-function 'ignore)
 
@@ -131,44 +133,13 @@
 (autoload 'flyspell-delay-command "flyspell" "Delay on command." t)
 (autoload 'tex-mode-flyspell-verify "flyspell" "" t)
 (add-hook 'LaTeX-mode-hook 'turn-on-flyspell)
-
-add (require 'org-mac-iCal)
-
-(add-hook 'org-agenda-cleanup-fancy-diary-hook
-	  (lambda ()
-	    (goto-char (point-min))
-	    (save-excursion
-	      (while (re-search-forward "^[a-z]" nil t)
-		(goto-char (match-beginning 0))
-		(insert "0:00-24:00 ")))
-	    (while (re-search-forward "^ [a-z]" nil t)
-	      (goto-char (match-beginning 0))
-	      (save-excursion
-		(re-search-backward "^[0-9]+:[0-9]+-[0-9]+:[0-9]+ " nil t))
-	      (insert (match-string 0)))))
-
-;; defining backtab such that it removed 4 spaces
-(global-set-key (kbd "<backtab>") 'un-indent-by-removing-4-spaces)
-(defun un-indent-by-removing-4-spaces ()
-  "remove 4 spaces from beginning of of line"
-  (interactive)
-  (save-excursion
-    (save-match-data
-      (beginning-of-line)
-      ;; get rid of tabs at beginning of line
-      (when (looking-at "^\\s-+")
-        (untabify (match-beginning 0) (match-end 0)))
-      (when (looking-at "^    ")
-        (replace-match "")))))
-
 (setq c-default-style "linux"
       c-basic-offset 4)
 
-(c-set-offset 'substatement-open 0)
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(setq indent-line-function 'insert-tab)
+(show-paren-mode 1)
 
-(setq-default c-basic-offset 4
-	      tab-width 4
-	      indent-tabs-mode t)
-
-(c-set-offset 'inexpr-class 0)
-
+(global-set-key (kbd "M-<up>") 'switch-to-next-buffer)
+(global-set-key (kbd "M-<down>") 'switch-to-prev-buffer)

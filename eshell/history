@@ -19,3 +19,27 @@ go run wake.go
 go run wake.go 
 go run wake.go
 ls
+clear
+ls
+cd ~/
+ls
+cd Desktop/Other/
+ls
+mv Stuff/ .Stuff/
+clear
+cd .Stuff/
+ls
+clear
+cd ..
+cd ..
+cd ..
+clear
+ls
+cd Users/
+ls
+cd cd welshej/
+ls
+clear
+cd welshej/
+ls
+ls
