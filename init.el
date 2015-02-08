@@ -63,10 +63,14 @@
 (key-chord-define-global "qw" 'bookmark-set)
 (key-chord-define-global "qe" 'bookmark-jump)
 (key-chord-define-global "qr" 'list-bookmarks)
-(key-chord-define-global "bn" 'compile)
 (key-chord-define-global "fj" 'kill-whole-line)
 (key-chord-define-global ",." 'spotify-next)
 (key-chord-define-global "nm" 'spotify-previous)
+
+(key-chord-define-global "cc" 'kill-ring-save)
+(key-chord-define-global "vv" 'yank)
+;(key-chord-define-global "xx" 'cut)
+(key-chord-define-global "oo" 'other-frame)
 
 
 (pending-delete-mode t)
@@ -128,11 +132,6 @@
 ;; Stuff that Ethan added
 (setq visible-bell t)
 (setq ring-bell-function 'ignore)
-
-(autoload 'flyspell-mode "flyspell" "On-the-fly spelling checker." t)
-(autoload 'flyspell-delay-command "flyspell" "Delay on command." t)
-(autoload 'tex-mode-flyspell-verify "flyspell" "" t)
-(add-hook 'LaTeX-mode-hook 'turn-on-flyspell)
 (setq c-default-style "linux"
       c-basic-offset 4)
 

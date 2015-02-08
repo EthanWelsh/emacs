@@ -43,3 +43,7 @@ clear
 cd welshej/
 ls
 ls
+ls
+cd ~
+cd .emacs.d/
+git status
