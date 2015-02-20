@@ -47,3 +47,50 @@ ls
 cd ~
 cd .emacs.d/
 git status
+ls
+make
+make
+make
+ls
+make
+make main.go 
+go run makefile
+go run main.go 
+ls
+javac javaTrial.java 
+javac javaTrial.java 
+java javaTrial.java
+javac javaTrial.java 
+java javaTrial.java
+clear
+ls
+javac GroundStation.java 
+ls
+cd ~
+cd github/
+ls
+cd GroundStation/
+ls
+cd depend/
+l
+ls
+pwd
+GroundStation.java:1086: cannot find symbolls
+ls
+bash install.bash 
+cd ..
+ls
+cd groundstationosx/
+ls
+cd src/
+ls
+javac GroundStation.java 
+ls
+cd ..
+ls
+cd ~
+cd Documents/
+ls
+cd helpRando/
+ls
+javac Project1.java 

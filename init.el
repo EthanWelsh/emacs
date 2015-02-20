@@ -11,6 +11,23 @@
 (require 'ido)
 (require 'go-mode)
 
+(setq cscope-do-not-update-database t)
+
+(when (eq system-type 'darwin) 
+;;; exec path 
+  (setq exec-path (append '("/opt/local/bin") 
+                          exec-path)) 
+(setq exec-path (append '("/usr/local/bin") 
+                        exec-path)))
+
+(load-file "/Users/welshej/.emacs.d/elpa/xcscope-20140510.1437/xcscope.el")
+(require 'xcscope)
+(cscope-setup)
+
+
+
+
+
 (require 'auto-complete)
 (require 'auto-complete-config)
 (ac-config-default)
@@ -59,7 +76,6 @@
 (key-chord-define-global "uu" 'undo-tree-visualize)
 (key-chord-define-global "xx" 'execute-extended-command)
 (key-chord-define-global "yy" 'browse-kill-ring)
-(key-chord-define-global ";;" 'emmet-expand-line)
 (key-chord-define-global "qw" 'bookmark-set)
 (key-chord-define-global "qe" 'bookmark-jump)
 (key-chord-define-global "qr" 'list-bookmarks)
@@ -67,10 +83,10 @@
 (key-chord-define-global ",." 'spotify-next)
 (key-chord-define-global "nm" 'spotify-previous)
 
-(key-chord-define-global "cc" 'kill-ring-save)
-(key-chord-define-global "vv" 'yank)
-;(key-chord-define-global "xx" 'cut)
-(key-chord-define-global "oo" 'other-frame)
+(key-chord-define-global "zc" 'kill-ring-save)
+(key-chord-define-global "zv" 'yank)
+(key-chord-define-global "zx" 'kill)
+(key-chord-define-global "oo" 'other-window)
 
 
 (pending-delete-mode t)
@@ -142,3 +158,28 @@
 
 (global-set-key (kbd "M-<up>") 'switch-to-next-buffer)
 (global-set-key (kbd "M-<down>") 'switch-to-prev-buffer)
+
+(autoload 'flyspell-mode "flyspell" "On-the-fly spelling checker." t)
+(setq ispell-program-name "/usr/local/Cellar/ispell/3.3.02/bin/ispell")
+
+
+(defun flyspell-emacs-popup-choose (org-fun event poss word)
+  (if (window-system)
+      (funcall org-fun event poss word)
+    (flyspell-emacs-popup-textual event poss word)))
+
+
+ (eval-after-load "flyspell"
+      '(progn
+          (advice-add 'flyspell-emacs-popup :around #'flyspell-emacs-popup-choose)))
+
+(set-default-font "Inconsolata-13")
+(set-frame-font "Inconsolata-13")
+
+(setq mac-command-modifier 'meta)
+
+
+
+;; Set compile to not ask for a prompt and to just go with
+(setq compilation-read-command nil)
+

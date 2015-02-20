@@ -1,4 +1,20 @@
-((("other-frame" .
+((("XYZSet" .
+   [0 0 1 0 0 0])
+  ("selectBitsFromLeft" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("select" .
+   [0 0 0 1 0 0])
+  ("Println" .
+   [1 0 0 0 1 0 0])
+  ("start" .
+   [1 0 0 0 0])
+  ("compile" .
+   [1 0 0 0 0 0 0])
+  ("o" .
+   [1])
+  ("other-window" .
+   [0 0 0 0 0 0 0 0 0 1 0 0])
+  ("other-frame" .
    [0 0 0 0 0 1 0 0 0 0 0])
   ("cut" .
    [1 0 0])
