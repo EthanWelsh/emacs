@@ -1,46 +1,46 @@
-((("XYZSet" .
-   [0 0 1 0 0 0])
-  ("selectBitsFromLeft" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("select" .
-   [0 0 0 1 0 0])
-  ("Println" .
-   [1 0 0 0 1 0 0])
-  ("start" .
-   [1 0 0 0 0])
-  ("compile" .
-   [1 0 0 0 0 0 0])
-  ("o" .
-   [1])
-  ("other-window" .
-   [0 0 0 0 0 0 0 0 0 1 0 0])
-  ("other-frame" .
-   [0 0 0 0 0 1 0 0 0 0 0])
-  ("cut" .
+((("kbd" .
    [1 0 0])
-  ("yank" .
-   [0 0 0 1])
-  ("kill-ring-save" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0])
-  ("spotify-previous" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("spotify-next" .
-   [0 0 0 0 1 0 0 0 0 0 0 0])
-  ("next" .
-   [1 0 0 0])
-  ("key-chord" .
-   [0 0 0 2 4 0 0 0 0])
-  ("m" .
-   [1])
-  ("key-chord-define" .
-   [0 0 0 0 0 0 0 1 0 0 0 6 0 0 0 0])
-  ("key-chord-define-global" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 3 3 0 0 0])
-  ("require" .
-   [0 0 0 1 0 0 0])
-  ("auto-complete-config" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
   ("ac-config-default" .
    [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("kbd" .
-   [1 0 0])))
+  ("auto-complete-config" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("require" .
+   [0 0 0 1 0 0 0])
+  ("key-chord-define-global" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 3 3 0 0 0])
+  ("key-chord-define" .
+   [0 0 0 0 0 0 0 1 0 0 0 6 0 0 0 0])
+  ("m" .
+   [1])
+  ("key-chord" .
+   [0 0 0 2 4 0 0 0 0])
+  ("next" .
+   [1 0 0 0])
+  ("spotify-next" .
+   [0 0 0 0 1 0 0 0 0 0 0 0])
+  ("spotify-previous" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("kill-ring-save" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("yank" .
+   [0 0 0 1])
+  ("cut" .
+   [1 0 0])
+  ("other-frame" .
+   [0 0 0 0 0 1 0 0 0 0 0])
+  ("other-window" .
+   [0 0 0 0 0 0 0 0 0 1 0 0])
+  ("o" .
+   [1])
+  ("compile" .
+   [1 0 0 0 0 0 0])
+  ("start" .
+   [1 0 0 0 0])
+  ("Println" .
+   [1 0 0 0 1 0 0])
+  ("select" .
+   [0 0 0 1 0 0])
+  ("selectBitsFromLeft" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("XYZSet" .
+   [0 0 1 0 0 0])))

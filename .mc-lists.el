@@ -5,6 +5,7 @@
       '(
         autopair-insert-opening
         autopair-skip-close-maybe
+        go-mode-insert-and-indent
         mouse-set-region
         save-some-buffers
         switch-to-next-buffer

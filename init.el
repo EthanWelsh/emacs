@@ -85,8 +85,9 @@
 
 (key-chord-define-global "zc" 'kill-ring-save)
 (key-chord-define-global "zv" 'yank)
-(key-chord-define-global "zx" 'kill)
+(key-chord-define-global "zx" 'kill-region)
 (key-chord-define-global "oo" 'other-window)
+(key-chord-define-global "ii" 'cscope-find-this-symbol)
 
 
 (pending-delete-mode t)
